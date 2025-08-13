@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html id="html" lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRẮC NGHIỆM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+
+    <!-- điền thông tin -->
+    <!-- <div class="modal ">
+      <form id="main">
+      <div class="modal_overlay">
+      </div>
+      <div class="modal_body">
+        <div class="modal_inner">
+          <div class="auth_form">
+            <div class="auth_form_header">
+              <h3 class="form_heading">Điền thông tin</h3>
+            </div>
+
+            <div class="form">
+              <div id="input_group">
+                <input type="number" name="stt" class="input_stt" id="input_sbd"  placeholder="Số báo danh">
+                <span class="warnning"></span>
+              </div>
+              <div id="input_group">
+                <input type="text" name="name" class="input_stt" id="input_ten"  placeholder="Họ và tên">
+                <span class="warnning"></span>
+              </div>
+              
+              <div id="input_group">
+                <select class="input_stt" name="Dv" id="Dv">
+                  <option value=""> Đơn vị</option>
+                  <option value="1"> Phòng Tham mưu</option>
+                  <option value="2"> Phòng Chính trị</option>
+                  <option value="3"> Phòng HC-KT</option>
+                  <option value="4"> Đội Hỏa lực</option>
+                  <option value="5"> Trạm CHCĐ</option>
+                  <option value="6"> Trạm TT-RĐ</option>
+                  <option value="7"> Trạm Kỹ thuật</option>
+                </select>
+                <span class="warnning"></span>
+              </div>
+              
+            </div>
+
+            <div class="btn_accept">
+              <button class="btn_ok">
+                Xác nhận
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
+    </div> -->
+
+    <!-- Nội dung -->
+    <div class="quiz_wrapper">
+      <div class="quiz_login">
+        <p class="quiz_login_name">Xin chào</p>
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="quiz_header">
+        <div class="quiz_timer">
+          <i class="fa-regular fa-clock"></i>
+          <div class="quiz_timer_text">
+            <span>Thời gian còn lại</span>
+            <p id="timer">10:00:00</p>
+          </div>
+        </div>
+        <button id="quiz_submit">Nộp bài</button>
+      </div>
+      <div class="quiz_container">
+        <div class="quiz_question">
+          <h5>Câu hỏi 1 trên 10</h5>
+          <p id="quiz_title">
+            Câu hỏi?
+          </p>
+          <ul>
+            <li><span>A.</span><span class="quiz_answer_item">Đáp án 1</span></li>
+            <li><span>B.</span><span class="quiz_answer_item">Đáp án 2</span></li>
+            <li><span>C.</span><span class="quiz_answer_item">Đáp án 3</span></li>
+            <li><span>D.</span><span class="quiz_answer_item">Đáp án 4</span></li>
+          </ul>
+        </div>
+        <div class="quiz_progress">
+          <svg>
+            <circle r="50"></circle>
+            <circle id="progress" r="50"></circle>
+          </svg>
+          <span id="progress_text">9/10</span>
+        </div>
+      </div>
+      <div class="quiz_numbers">
+        <button id="quiz_prev">Trước</button>
+        <ul></ul>
+        <button id="quiz_next">Tiếp</button>
+      </div>
+    </div>
+    <!-- lam dang nhap -->
+    
+  </body>
+
+  
+   <script src="main.js"></script>
+   <!-- <script src="accept.js"></script>
+   <script>
+        Warnning({
+            form: '#main',
+            rules: [
+                Warnning.isDefine('#input_sbd', 'Đồng chí phải nhập số báo danh'),
+                Warnning.isDefine('#input_ten', 'Đồng chí phải nhập họ và tên'),
+                Warnning.isDefine('#Dv', 'Đồng chí phải chọn đơn vị'),
+            ],
+            formGroup: '#input_group',
+            formsubmid: function(value){
+                console.log(value);
+                const modal = document.querySelector('.modal');
+                modal.classList.add('hide_block');
+                const script = document.createElement('script');
+                script.src= 'main.js';
+                document.body.appendChild(script);
+                const ten_the = document.querySelector('.quiz_login_name');
+                ten_the.innerHTML = "Xin Chào "+ value["name"];
+            }
+        })
+    </script> -->
+    
+</html>
