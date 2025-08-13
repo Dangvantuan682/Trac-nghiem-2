@@ -34,7 +34,7 @@ const quiz = {
 
   getQuestions: async function () {
     try {
-      const response = await fetch(`${API}?category=BDHVS`);
+      const response = await fetch(`${API}?category=CNTT`);
       const data = await response.json();
       questions = data;
       console.log(data);
@@ -45,7 +45,7 @@ const quiz = {
   getResults: async function () {
     quizSubmit.innerText = "Đang nộp bài";
     const postData = {
-      category: "BDHVS",
+      category: "CNTT",
       questions: questions,
     };
     try {
